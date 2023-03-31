@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ffffff;
+    background-color: #d6eadf;
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
@@ -12,7 +12,7 @@ body {
 nav {
     background-color: #333;
 }
-nav div {
+nav div a {
     vertical-align: middle;
     font-size: 26px;
     font-weight: 500;
@@ -23,6 +23,11 @@ nav div {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+nav div a:hover {
+    background-color: #111;
+}
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
