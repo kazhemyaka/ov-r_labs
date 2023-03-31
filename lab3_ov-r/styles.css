@@ -217,12 +217,7 @@ ul.footnav li a.active {
         display: none;
     }
     #photo-block div {
-        top: 0;
-        left: 0;
-        transform: translate(0%, 0%);
-        position: static;
-        font-size: 16px;
-        color: black;
+        display: none;
     }
     footer {
         display: none;
@@ -248,6 +243,9 @@ ul.footnav li a.active {
 @media (min-width: 920px) and (max-width: 1163px) {
     .col-6 {
         width: 50%;
+    }
+    #form {
+        width: 100%;
     }
 }
 
@@ -324,6 +322,15 @@ form input[type="checkbox"] {
     width: 50%;
     margin: 0 auto;
 }
+@media (max-width: 919px) {
+    form {
+        font-size: 16px;
+    }
+    #form {
+        width: 100%;
+    }
+}
+
 #info {
     text-align: center;
     margin-bottom: 50px;

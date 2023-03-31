@@ -217,12 +217,7 @@ ul.footnav li a.active {
         display: none;
     }
     #photo-block div {
-        top: 0;
-        left: 0;
-        transform: translate(0%, 0%);
-        position: static;
-        font-size: 16px;
-        color: black;
+        display: none;
     }
     footer {
         display: none;
