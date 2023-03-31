@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ccd7c8;
+    background-color: #ffffff;
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
@@ -243,7 +243,7 @@ ul.footnav li a.active {
     }
 }
 
-@media (min-width: 0px) and (max-width: 919px) {
+@media (max-width: 919px) {
     .photo-history {
         width: 100%;
     }
