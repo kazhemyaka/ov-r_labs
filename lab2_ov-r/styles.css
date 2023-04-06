@@ -90,9 +90,13 @@ figure figcaption {
     padding: 0;
 }
 
-.without-border figure {
+.without-background figure {
     padding: 30px 0;
-    border: none;
+    background-color: transparent;
+}
+
+.without-background figure figcaption {
+    color: black;
 }
 
 #photo-block {
@@ -158,10 +162,10 @@ ul.footnav li a.active {
 }
 
 .photo-history {
-    border: 1px solid black;
+    background-color: #333333;
     border-radius: 10px;
     display: block;
-    padding: 15px;
+    padding: 30px;
 }
 .photo-gallery {
     border-radius: 10px;
@@ -171,8 +175,13 @@ ul.footnav li a.active {
 .photo-history img, .photo-gallery img {
     border-radius: 10px;
 }
-.photo-history figcaption, .photo-gallery figcaption {
+.photo-history figcaption {
     font-size: 16px;
+    color: white;
+}
+.photo-gallery figcaption {
+    font-size: 16px;
+    color: black;
 }
 .left {
     margin-top: 20px;
