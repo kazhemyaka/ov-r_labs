@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img id="img1" src="images/logo1.png" width="18" height="18" alt="logo">
+                <img id="img2" src="images/logo2.png" width="18" height="18" alt="logo">
+                <br>
+                <img id="img3" src="images/logo3.png" width="18" height="18" alt="logo">
+                <img id="img4" src="images/logo4.png" width="18" height="18" alt="logo">
+            </div>
+            <div><a href="index.html">Місто Звягель</a></div>
+            <ul class="topnav" id="myTopnav">
+                <li class="not-visible-mb" onclick="toggleMenu()"><a id="js-active" class="" href="javascript:void(0);"><img width="30px" height="30px" src="images/menu.svg" alt="menu"></a></li>
+                <li class="not-visible-pc"><a href="javascript.html">JavaScript</a></li>
+                <li class="not-visible-pc"><a class="active" href="contacts.html">Контакти</a></li>
+                <li class="not-visible-pc"><a href="gallery.html">Галерея</a></li>
+                <li class="not-visible-pc"><a href="history.html">Історія</a></li>
+                <li class="not-visible-pc"><a  href="index.html">Головна</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-content">
+        <div id="info">
+            <h2>Контакти</h2>
+            <p>Автор сайту: Опанасюк Микита, студент НТУ "ХПІ", група КН-221г</p>
+            <p>Електронна пошта: <a href="mailto:nikitaopanassiuk@outlook.com">nikitaopanassiuk@outlook.com</a> або <a href="mailto:mykyta.opanasiuk@cs.khpi.edu.ua">mykyta.opanasiuk@cs.khpi.edu.ua</a></p>
+            <p>Телефон: <a href="tel:+380688977756">+380688977756</a></p>
+            <p>Можете написати на пошту або скористатися формою <a href="#form">нижче!</a></p>
+        </div>
+        <div id="form">
+            <form>
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+                <label for="surname">Прізвище</label>
+                <input type="text" id="surname" name="surname" placeholder="Введіть прізвище" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Введіть email" required>
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" pattern="^\+(?:[0-9] ?){6,14}[0-9]$" placeholder="Введіть телефон">
+                <label for="choice">Причина звернення</label>
+                <select id="choice" name="choice" required>
+                    <option value="1">Питання</option>
+                    <option value="2">Пропозиція</option>
+                    <option value="3">Знайшли помилку?</option>
+                    <option value="4">Інше</option>
+                </select>
+                <label for="сheckbox">Згода на обробку персональних даних</label>
+                <input type="checkbox" id="сheckbox" name="сheckbox" required>
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" placeholder="Введіть повідомлення" required></textarea>
+                <input type="submit" value="Відправити">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul class="footnav">
+                <li><a href="https://info.nvrada.gov.ua/">Звягельська міська рада</a></li>
+                <li><a href="https://www.zvyagel.com.ua/">«Звягель» — щотижнева газета</a></li>
+                <li><a href="http://www.zvyagel.org.ua/">Історія стародавнього міста Звягель</a></li>
+                <li><a href="https://novograd.city/">Novograd.City</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="l5.js"></script>
+</body>
+</html>

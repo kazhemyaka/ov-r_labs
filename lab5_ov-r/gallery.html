@@ -5,103 +5,113 @@
     <title>Звягель</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <header>
         <nav>
+            <div id="logo">
+                <img id="img1" src="images/logo1.png" width="18" height="18" alt="logo">
+                <img id="img2" src="images/logo2.png" width="18" height="18" alt="logo">
+                <br>
+                <img id="img3" src="images/logo3.png" width="18" height="18" alt="logo">
+                <img id="img4" src="images/logo4.png" width="18" height="18" alt="logo">
+            </div>
             <div><a href="index.html">Місто Звягель</a></div>
-            <ul class="topnav">
-                <li><a href="contacts.html">Контакти</a></li>
-                <li><a class="active" href="gallery.html">Галерея</a></li>
-                <li><a href="history.html">Історія</a></li>
-                <li><a href="index.html">Головна</a></li>
+            <ul class="topnav" id="myTopnav">
+                <li class="not-visible-mb" onclick="toggleMenu()"><a id="js-active" class="" href="javascript:void(0);"><img width="30px" height="30px" src="images/menu.svg" alt="menu"></a></li>
+                <li class="not-visible-pc"><a href="javascript.html">JavaScript</a></li>
+                <li class="not-visible-pc"><a href="contacts.html">Контакти</a></li>
+                <li class="not-visible-pc"><a class="active" href="gallery.html">Галерея</a></li>
+                <li class="not-visible-pc"><a href="history.html">Історія</a></li>
+                <li class="not-visible-pc"><a href="index.html">Головна</a></li>
             </ul>
         </nav>
     </header>
     <div id="main-content">
         <div class="row">
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/736-8d31db4c4b.jpg" alt="Залізничний міст" width="340" height="250">
+                <img src="images/gallery.html/Залізничний_міст.jpg" alt="Залізничний міст" width="340" height="250">
                 <figcaption>Залізничний міст</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/Осінній_псевдозамок_Звягеля.jpg" alt="Реконструкція частини Звягельської фортеці" width="340" height="250">
+                <img src="images/gallery.html/Осінній_псевдозамок_Звягеля.jpg" alt="Реконструкція частини Звягельської фортеці" width="340" height="250">
                 <figcaption>Реконструкція частини Звягельської фортеці</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/ПКіВ_Новоград.JPG" alt="Центральний вхід до парку культури та відпочинку" width="340" height="250">
+                <img src="images/gallery.html/ПКіВ_Звягель.jpg" alt="Центральний вхід до парку культури та відпочинку" width="340" height="250">
                 <figcaption>Центральний вхід до парку культури та відпочинку</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/Площа_Лесі_Українки_у_Н.-Волинському.jpg" alt="Площа Лесі Українки" width=340" height="250">
+                <img src="images/gallery.html/Площа_Лесі_Українки.jpg" alt="Площа Лесі Українки" width="340" height="250">
                 <figcaption>Площа Лесі Українки</figcaption>
             </figure>
             <!-- ROW -->
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/o_1g5ogqdsgdb318s0hce1qa51ncl2h.jpg" alt="Вид з пташиного польоту" width="340" height="250">
+                <img src="images/gallery.html/Вид_з_пташиного_польоту_1.jpg" alt="Вид з пташиного польоту" width="340" height="250">
                 <figcaption>Вид з пташиного польоту</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/Садиба_Мезенцева.jpg" alt="Садиба Мезенцева" width="340" height="250">
+                <img src="images/gallery.html/Садиба_Мезенцева.jpg" alt="Садиба Мезенцева" width="340" height="250">
                 <figcaption>Садиба Мезенцева</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/1055.jpg" alt="Будинок Лесі Українки (наразі Музей)" width="340" height="250">
+                <img src="images/gallery.html/Будинок_Лесі_Українки.jpg" alt="Будинок Лесі Українки (наразі Музей)" width="340" height="250">
                 <figcaption>Будинок Лесі Українки (наразі Музей)</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/560.jpg" alt="Вид з пташиного польоту на фортецю Звягель" width="340" height="250">
+                <img src="images/gallery.html/Вид_з_пташиного_польоту_на_фортецю_Звягель.jpg" alt="Вид з пташиного польоту на фортецю Звягель" width="340" height="250">
                 <figcaption>Вид з пташиного польоту на фортецю Звягель</figcaption>
             </figure>
             <!-- ROW -->
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/2-Hotelno-restorannyy-kompleks-Novohrad-Volynskyy.jpg" alt="Центр міста" width="340" height="250">
+                <img src="images/gallery.html/Центр_міста.jpg" alt="Центр міста" width="340" height="250">
                 <figcaption>Центр міста</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/40.jpg" alt="Залізничний міст" width="340" height="250">
+                <img src="images/gallery.html/Залізничний_міст_2.jpg" alt="Залізничний міст" width="340" height="250">
                 <figcaption>Залізничний міст</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/o_1g26u9prjeagjbk1gdo5knj521k.jpg" alt="Вид з пташиного польоту" width="340" height="250">
+                <img src="images/gallery.html/Вид_з_пташиного_польоту_2.jpg" alt="Вид з пташиного польоту" width="340" height="250">
                 <figcaption>Вид з пташиного польоту</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/Будівля_вокзалу_станції_Звягель_I.jpg" alt="Будівля вокзалу станції Звягель I" width="340" height="250">
+                <img src="images/gallery.html/Будівля_вокзалу_станції_Звягель_I.jpg" alt="Будівля вокзалу станції Звягель I" width="340" height="250">
                 <figcaption>Будівля вокзалу станції Звягель I</figcaption>
             </figure>
             <!-- ROW -->
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/1559128864-112.jpg" alt="Дзвін фортеці" width="340" height="250">
+                <img src="images/gallery.html/Дзвін_фортеці.jpg" alt="Дзвін фортеці" width="340" height="250">
                 <figcaption>Дзвін фортеці</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/18466_800x600_Screenshot_1.jpg" alt="Будинок родини Косачів (наразі Музей)" width="340" height="250">
+                <img src="images/gallery.html/Будинок_Родини_Косачів.jpg" alt="Будинок родини Косачів (наразі Музей)" width="340" height="250">
                 <figcaption>Будинок родини Косачів (наразі Музей)</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/gorod%20nv%204.jpg" alt="Річка Случ" width="340" height="250">
+                <img src="images/gallery.html/Річка_Случ_1.jpg" alt="Річка Случ" width="340" height="250">
                 <figcaption>Річка Случ</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/3358.jpg" alt="Річка Случ" width="340" height="250">
+                <img src="images/gallery.html/Річка_Случ_2.jpg" alt="Річка Случ" width="340" height="250">
                 <figcaption>Річка Случ</figcaption>
             </figure>
             <!-- ROW -->
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/309258991_192409203146441_7263522406154014075_n.jpg" alt="Костьол" width="340" height="250">
+                <img src="images/gallery.html/Костьол.jpg" alt="Костьол" width="340" height="250">
                 <figcaption>Костьол</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/svyato-mihaylivsykiy%20sobor.jpg" alt="Свято-Михайлівський собор" width="340" height="250">
+                <img src="images/gallery.html/Свято_Михайлівський_Собор.jpg" alt="Свято-Михайлівський собор" width="340" height="250">
                 <figcaption>Свято-Михайлівський собор</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/ava10-big.jpg" alt="Дзвін фортеці" width="340" height="250">
+                <img src="images/gallery.html/Дзвін_Фортеці_2.jpg" alt="Дзвін фортеці" width="340" height="250">
                 <figcaption>Дзвін фортеці</figcaption>
             </figure>
             <figure class="photo-gallery col-3 col-4 col-1 col-6">
-                <img src="images/img0179_5d03bc7933c6e.jpg" alt="Вид з пташиного польоту" width="340" height="250">
+                <img src="images/gallery.html/Вид_з_пташиного_польоту_3.jpg" alt="Вид з пташиного польоту" width="340" height="250">
                 <figcaption>Вид з пташиного польоту</figcaption>
             </figure>
         </div>
@@ -119,10 +129,11 @@
             <ul class="footnav">
                 <li><a href="https://info.nvrada.gov.ua/">Звягельська міська рада</a></li>
                 <li><a href="https://www.zvyagel.com.ua/">«Звягель» — щотижнева газета</a></li>
-                <li><a href="http://www.zvyagel.org.ua/">Історія стародавнього міста Звягель</a></li>
+                <li><a href="https://www.zvyagel.org.ua/">Історія стародавнього міста Звягель</a></li>
                 <li><a href="https://novograd.city/">Novograd.City</a></li>
             </ul>
         </nav>
     </footer>
+    <script src="l5.js"></script>
 </body>
 </html>
