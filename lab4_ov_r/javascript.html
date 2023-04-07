@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="l4.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a href="index.html">Місто Звягель</a></div>
+            <ul class="topnav">
+                <li><a class="active" href="javascript.html">JavaScript</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="history.html">Історія</a></li>
+                <li><a href="index.html">Головна</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-content">
+        <div id="form">
+            <form>
+                <label for="weeks">Кількість тижнів з останнього 1 вересня</label>
+                <input type="text" id="weeks" name="weeks" readonly>
+                <button type="button" onclick="showWeeks()">ОК</button>
+                <button type="button" onclick="clearWeeks()">Відміна</button>
+                <hr>
+                <select id="select">
+                    <option>Перший варіант</option>
+                    <option>Другий варіант</option>
+                    <option>Третій варіант</option>
+                </select>
+                <label><a href="#" onclick="showValue()">Поточний елемент списку</a></label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
