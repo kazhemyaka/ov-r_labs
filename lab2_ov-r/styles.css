@@ -269,4 +269,7 @@ ul.footnav li a.active {
         right: 10%;
         transform: translate(-20%, -50%);
     }
+    .photo-history {
+        padding: 20px;
+    }
 }
