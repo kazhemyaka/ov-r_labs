@@ -27,10 +27,6 @@ nav div a {
     text-decoration: none;
 }
 
-nav div a:hover {
-    background-color: #111;
-}
-
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -46,9 +42,6 @@ ul.topnav li a {
     text-align: center;
     padding: 20px;
     text-decoration: none;
-}
-ul.topnav li a:hover:not(.active) {
-    background-color: #111;
 }
 ul.topnav li a.active {
     background-color: #04AA6D;
@@ -165,9 +158,6 @@ ul.footnav li a {
     text-align: center;
     padding: 20px;
     text-decoration: none;
-}
-ul.footnav li a:hover:not(.active) {
-    background-color: #111;
 }
 ul.footnav li a.active {
     background-color: #04AA6D;
@@ -399,21 +389,35 @@ a {
     text-decoration: none;
 }
 
-a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    border-radius: 4px;
-    background-color: #04AA6D;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-}
+@media (hover: hover) and (pointer: fine) {
+    ul.topnav li a:hover:not(.active) {
+        background-color: #111;
+    }
 
-a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+    nav div a:hover {
+        background-color: #111;
+    }
+
+    ul.footnav li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 4px;
+        background-color: #04AA6D;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
 }
