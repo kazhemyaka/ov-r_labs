@@ -10,7 +10,7 @@ body {
 }
 /** Header **/
 nav {
-    background-color: #333;
+    background-color: #333333;
 }
 
 nav div {
@@ -53,9 +53,26 @@ ul.topnav li a:hover:not(.active) {
 ul.topnav li a.active {
     background-color: #04AA6D;
 }
-@media screen and (max-width: 767px) {
-    ul.topnav li, nav div {
+ul.topnav li:nth-child(1) a {
+    padding: 13px;
+}
+@media (max-width: 919px) {
+    ul.topnav li {
         float: none;
+    }
+    nav div {
+        float: none;
+    }
+    .responsive {
+        position: relative;
+    }
+    .responsive li {
+        display: block;
+        text-align: center;
+    }
+    ul.topnav li:nth-child(1) img {
+        width: 40px;
+        height: 40px;
     }
 }
 /** End Header **/
@@ -160,7 +177,6 @@ ul.footnav li a.active {
         float: none;
     }
 }
-
 .photo-history {
     background-color: #333333;
     border-radius: 10px;
@@ -241,17 +257,26 @@ ul.footnav li a.active {
     .col-3 {
         width: 25%;
     }
+    .not-visible-mb {
+        display: none;
+    }
 }
 
 @media (min-width: 1164px) and (max-width: 1543px) {
     .col-4 {
         width: 33.33%;
     }
+    .not-visible-mb {
+        display: none;
+    }
 }
 
 @media (min-width: 920px) and (max-width: 1163px) {
     .col-6 {
         width: 50%;
+    }
+    .not-visible-mb {
+        display: none;
     }
 }
 
@@ -269,8 +294,11 @@ ul.footnav li a.active {
         right: 10%;
         transform: translate(-20%, -50%);
     }
-    .photo-history {
+    .photo-history-big {
         padding: 20px;
+    }
+    .not-visible-pc {
+        display: none;
     }
 }
 

@@ -5,17 +5,19 @@
     <title>Звягель</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div><a href="index.html">Місто Звягель</a></div>
-            <ul class="topnav">
-                <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="history.html">Історія</a></li>
-                <li><a class="active" href="index.html">Головна</a></li>
+            <ul class="topnav" id="myTopnav">
+                <li class="not-visible-mb" onclick="toggleMenu()"><a id="js-active" class="" href="javascript:void(0);"><img width="30px" height="30px" src="images/menu-hamburger-svgrepo-com%20(1).svg"></a></li>
+                <li class="not-visible-pc"><a href="javascript.html">JavaScript</a></li>
+                <li class="not-visible-pc"><a href="contacts.html">Контакти</a></li>
+                <li class="not-visible-pc"><a href="gallery.html">Галерея</a></li>
+                <li class="not-visible-pc"><a href="history.html">Історія</a></li>
+                <li class="not-visible-pc"><a class="active" href="index.html">Головна</a></li>
             </ul>
         </nav>
     </header>
