@@ -31,7 +31,6 @@ function leapYear() {
         alert("Поточний рік (" + year + ") не є високосним.");
     }
 }
-window.onload = leapYear;
 
 function showValue() {
     let select = document.getElementById("select");
